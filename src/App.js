@@ -1,16 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./App.css";
-import Container from "./Components/Container";
 
 function App() {
+  const BASE_URL = "https://api.exchangeratesapi.io/latest";
+  const [currencyOptions, setCurrencyOptions] = useState([]);
+
+  useEffect(() => {
+    fetch(BASE_URL)
+      .then((res) => res.json())
+      .then((data) => {
+        setCurrencyOptions([data.base, ...Object.keys(data.rates)]);
+      });
+  }, []);
+
+  console.log(currencyOptions);
+
   return (
-    <div className="main-container">
-      <div className="flex-container">
-        <Container title="FROM" />
-        <Container title="TO" />
-      </div>
-      <button>Convert</button>
-      //Move the button to the bottom of the page in app.css
+    <div className="App">
+      <h1>Hello</h1>
     </div>
   );
 }
