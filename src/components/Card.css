@@ -1,0 +1,15 @@
+.container {
+  border: 1px solid red;
+  height: 300px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+}
+
+.container select,
+.container input {
+  width: 100%;
+}
