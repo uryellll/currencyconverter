@@ -62,6 +62,7 @@ function App() {
 
   return (
     <div className="main-container">
+      <h1>CURRENCY CONVERTER</h1>
       <div className="flex-container">
         <Card
           title="FROM"

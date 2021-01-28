@@ -1,4 +1,22 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background-color: #222831;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 2rem;
+  color: #f05454;
+}
+
 .flex-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 }

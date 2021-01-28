@@ -1,5 +1,5 @@
 .container {
-  border: 1px solid red;
+  background-color: #30475e;
   height: 300px;
   width: 400px;
   display: flex;
@@ -7,6 +7,9 @@
   justify-content: space-around;
   align-items: center;
   padding: 2rem;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  margin: 0.5rem;
 }
 
 .container select,
